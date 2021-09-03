@@ -1,6 +1,9 @@
+body {
+  margin: 0;
+}
 /* Header section */
-header{
-  background: #3C463E;
+header {
+  background: #3c463e;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -10,14 +13,69 @@ header{
   z-index: 1000;
 }
 
-nav{
+nav {
   display: none;
   position: fixed;
-  background: #3C463E;
-  
+  background: #3c463e;
+  top: 55px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-nav li{
+nav li {
   display: block;
 }
 
+li a {
+  text-decoration: none;
+  color: #3c463e;
+  background: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0px 8px;
+}
+
+li a:hover {
+  background: #d98236;
+  color: white;
+  padding: 5px;
+}
+
+.active {
+  background: #d98236;
+  color: white;
+  padding: 5px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+#humburger-menu {
+  display: none;
+}
+
+#humburger-menu:checked ~ nav {
+  display: block;
+}
+.fa-bars {
+  color: white;
+  font-size: 35px;
+}
+
+.fa-search {
+  position: relative;
+  left: 120px;
+  color: #d98236;
+}
+#search {
+  width: 130px;
+  border: none;
+  border-bottom: 2px solid #d98236;
+  background: #3c463e;
+}
+
+#search::placeholder {
+  color: white;
+}

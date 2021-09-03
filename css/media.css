@@ -1,0 +1,25 @@
+@media only screen and (min-width: 800px) {
+  nav {
+    display: block;
+    position: static;
+  }
+  nav li {
+    display: inline-block;
+    position: relative;
+  }
+
+  header {
+    justify-content: start;
+  }
+  header label {
+    display: none;
+  }
+  .search-point {
+    left: 22rem;
+    position: relative;
+    bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+}
