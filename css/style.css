@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 /* Header section */
 header {
@@ -29,23 +29,12 @@ nav li {
 
 li a {
   text-decoration: none;
-  color: #3c463e;
-  background: white;
+  color: white;
   font-size: 20px;
   padding: 5px;
-  margin: 0px 8px;
-}
-
-li a:hover {
-  background: #d98236;
-  color: white;
-  padding: 5px;
-}
-
-.active {
-  background: #d98236;
-  color: white;
-  padding: 5px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo img {
@@ -74,6 +63,14 @@ li a:hover {
   border: none;
   border-bottom: 2px solid #d98236;
   background: #3c463e;
+  color: white;
+}
+
+.search-point {
+  position: relative;
+  bottom: 3px;
+  display: flex;
+  justify-content: center;
 }
 
 #search::placeholder {

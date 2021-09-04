@@ -1,23 +1,50 @@
 @media only screen and (min-width: 800px) {
+  .logo img {
+    padding-left: 100px;
+  }
+  .active {
+    background: #d98236;
+    color: white;
+    padding: 5px;
+  }
+
+  li a:hover {
+    background: #d98236;
+    color: white;
+    padding: 5px;
+  }
+
   nav {
-    display: block;
+    display: flex;
     position: static;
+    justify-content: center;
   }
   nav li {
     display: inline-block;
     position: relative;
   }
 
-  header {
-    justify-content: start;
+  li a {
+    color: #3c463e;
+    background: white;
+    margin: 5px 10px;
   }
+
   header label {
     display: none;
   }
   .search-point {
-    left: 22rem;
+    left: 2rem;
     position: relative;
-    bottom: 35px;
+  }
+  .fa-search {
+    top: 38px;
+    z-index: 100;
+  }
+  #search {
+    height: 35px;
+    position: relative;
+    top: 26px;
   }
 }
 
