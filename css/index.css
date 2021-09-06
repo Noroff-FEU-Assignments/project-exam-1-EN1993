@@ -1,0 +1,84 @@
+.welcome-page {
+  padding: 0px 10px;
+}
+
+.welcome-page01 {
+  width: 100%;
+  height: 500px;
+  border: 2px solid green;
+  background-image: url(/images/home/kiting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  margin-top: 76px;
+}
+
+.welcome--page {
+  max-width: 650px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 356px;
+  background: #3c463e;
+}
+.welcome---page {
+  margin-top: 25px;
+}
+.welcome---page01 {
+  width: 300px;
+  height: 300px;
+  padding: 0px 10px;
+  background-image: url(/images/home/luke-bender-TzHl80vMzdk-unsplash\ .jpg);
+  background-size: cover;
+}
+
+.welcome---page02 {
+  width: 250px;
+  height: 300px;
+  color: white;
+  background: #3c463e;
+}
+
+/* slidershow */
+* {
+  box-sizing: border-box;
+}
+.slide-container {
+  margin-top: 225px;
+}
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slides {
+  display: none ;
+}
+.slide-picture img {
+  width: 300px;
+  vertical-align: middle;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 14px;
+  margin-top: -20px;
+  font-size: 19px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+figcaption {
+  color: white;
+  background: #3c463e;
+  position: absolute;
+}
