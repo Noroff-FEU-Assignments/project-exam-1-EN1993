@@ -1,3 +1,9 @@
+@media only screen and (min-width: 638px) {
+  .slide-container {
+    margin-top: 15rem;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .logo img {
     padding-left: 100px;
@@ -45,6 +51,9 @@
     height: 35px;
     position: relative;
     top: 26px;
+  }
+  .welcome-page01 {
+    margin-top: 76px;
   }
 }
 

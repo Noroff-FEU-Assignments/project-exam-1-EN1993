@@ -1,24 +1,36 @@
-const slideIndex = 1;
-showSlide(slideIndex);
+
+
+var galleryIndex = 1;
+galleryShow(galleryIndex);
 
 function plusSlides(n) {
-  showSlide(slideIndex += n);
+  galleryShow(galleryIndex += n);
+}
+
+function plusSlides(n) {
+  galleryShow(galleryIndex = n);
 }
 
 
-function showSlide(n) {
+
+function galleryShow(n) {
+
+  var i;
   
-  const slide = document.querySelector(".slides");
+  var slide = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
   
-  if (n > slide.length)
-  slideIndex = 1
-  
-  if (n < 1)
-  slideIndex = slide.length 
+  if (n > slide.length) {galleryIndex = 1}
+
+  if (n < 1){galleryIndex = slide.length} 
   
   for (i = 0; i < slide.length; i++) {
-      slide[i].display="none";
+      slide[i].style.display ="none";
   } 
-  slide.style.display ="block";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activeSlide", "");
+  }
+  slide[galleryIndex-1].style.display = "flex";
+  dots[galleryIndex-1].className += " activeSlide";
 }
 
