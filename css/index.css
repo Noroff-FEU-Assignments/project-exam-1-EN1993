@@ -43,6 +43,9 @@
   background: #3c463e;
 }
 
+h2 {
+}
+
 /* slidershow */
 
 body {
@@ -52,7 +55,7 @@ body {
   box-sizing: border-box;
 }
 .slide-container {
-  margin-top: 36rem;
+  margin-top: 39rem;
 }
 .slideshow {
   max-width: 1300px;
@@ -168,7 +171,8 @@ figcaption {
   height: 355px;
 }
 
-h4 {
+h4,
+h2 {
   text-align: center;
   margin-top: 75px;
   font-size: 30px;
