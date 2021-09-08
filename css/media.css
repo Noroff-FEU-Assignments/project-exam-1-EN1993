@@ -55,6 +55,21 @@
   .welcome-page01 {
     margin-top: 76px;
   }
+
+  .footer--wrapper1 {
+    display: block;
+  }
+  .footer--wrapper2 {
+    margin-left: 20%;
+  }
+  .sosial-icons {
+    display: flex;
+    justify-content: start;
+  }
+
+  .footer-under-text {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
