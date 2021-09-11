@@ -5,7 +5,7 @@
     <meta name="discription" content="a blog page for travel blog website, word travel | Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Word Travel | Blog</title>
@@ -18,9 +18,9 @@
         <nav>
             <ul>
                 <li><a href="index.html" > Home </a></li>
-                <li><a href="blog.html" class="active"> Blog </a></li>
+                <li><a href="blog.html" > Blog </a></li>
                 <li><a href=""> About </a></li>
-                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="contact.html" class="active"> Contact</a></li>
             </ul>
             <div class="search-point">
                 <i class="fas fa-search"></i>
@@ -28,11 +28,48 @@
             </div> 
         </nav>
     </header>
-    <main>
-        <section class="blog-posts">
-          <h1>Blog Posts</h1>
-          <div class="blog"></div>
-        </section>
+    <main class="contact">
+      <h1>Contact</h1>
+      <section>
+        <h2>Contact Me Here</h2>
+        <p>wt@email.com</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fas fa-play-circle"></i> 
+      </section>
+      <section class="contact-form">
+        <h3>Or Just Dropp a Message Here</h3>
+        <form action="" method="POST" id="contactForm">
+          <div class="contact-form01">
+            <div>
+              <label for="firstname"> First Name</label>
+              <input type="text" id="fname" name=" first name" placeholder="type first name">
+              <div class="errorForm fNameError">First Name must be more then 5 characters</div>
+            </div>
+            <div>
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lname" name="last name" placeholder="type last name">
+              <div class="errorForm lNameError">Last Name must be more then 5 characters</div>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="type email">
+              <div class="errorForm emailError">Please enter a valid email</div>
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="type subject">
+              <div class="errorForm subjectError">Subject must be more then 15 characters</div>
+            </div>
+            <div>
+              <label for="textarea">Message</label>
+              <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="type message"></textarea>
+              <div class="errorForm textAreaError">Message must be more then 25 characters</div>
+            </div>
+            <button class="Submit">Submit</button>
+          </div>
+
+        </form>
+      </section>
     </main>
     <footer>
         <div class="footer-wrapper">
