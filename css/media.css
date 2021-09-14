@@ -70,6 +70,21 @@
   .footer-under-text {
     text-align: left;
   }
+
+  .name {
+    display: inline-block;
+  }
+  #fname,
+#lname {
+  width: 275px;
+}
+
+#email,
+#subject,
+textarea {
+  width: 563px;
+}
+
 }
 
 @media only screen and (min-width: 1000px) {
