@@ -48,29 +48,27 @@ h2 {
 /* latest posts*/
 /* slidershow */
 
-body {
-  margin: 0;
-}
-* {
-  box-sizing: border-box;
-}
-.slide-container {
+
+
+.gallery-container {
   margin-top: 39rem;
 }
-.slideshow {
+.galleryshow{
   max-width: 1300px;
   position: relative;
   margin: auto;
 }
-.slides {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
-.img {
-  vertical-align: middle;
+.two,
+.three {
+  display: none;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -78,13 +76,13 @@ body {
   top: 50%;
   width: auto;
   padding: 14px;
-  margin-top: -25px;
+  margin-top: -67px;
   font-size: 19px;
-  transition: 0.5s ease;
+  transition: 0.5s all;
   font-weight: bold;
   background: #3c463e;
   color: white;
-  user-select: none;
+  border: none;
 }
 
 .next {
@@ -98,52 +96,19 @@ figcaption {
   color: white;
   background: #3c463e;
   text-align: center;
-  padding: 6px 10px;
+  padding: 1px ;
   width: 235px;
   position: relative;
-  bottom: 44px;
+  bottom: 5.5rem;
   margin-left: 32px;
   opacity: 0.7;
   font-size: 20px;
   font-weight: bold;
 }
 
-.dot {
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background: #3c463e;
-  display: inline-block;
-  border-radius: 50%;
-  transition: 0.5s #3c463e ease;
-  cursor: pointer;
-}
 
-.activeSlide,
-.dot:hover {
-  background: #d98236;
-}
-
-.showing {
-  animation-name: showing;
-  animation-duration: 1.5s;
-}
-
-@keyframes showing {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.slide-picture {
+.gallery-picture{
   margin: 10px;
-}
-
-.doting {
-  text-align: center;
 }
 
 /* featured blog*/

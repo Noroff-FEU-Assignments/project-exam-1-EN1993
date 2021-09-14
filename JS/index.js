@@ -1,36 +1,28 @@
 
+const galleryOne = document.querySelector(".one");
 
-var galleryIndex = 1;
-galleryShow(galleryIndex);
+const galleryTwo = document.querySelector(".two");
 
-function plusSlides(n) {
-  galleryShow(galleryIndex += n);
+const galleryThree = document.querySelector(".three");
+
+const prevButton = document.querySelector(".prev");
+
+const nextButton = document.querySelector(".next");
+
+function prevChange() {
+  
+  galleryOne.style.display ="flex"
+  galleryTwo.style.display ="none"
 }
 
-function plusSlides(n) {
-  galleryShow(galleryIndex = n);
+prevButton.onclick = prevChange;
+
+
+function nextChange() {
+  
+  galleryTwo.style.display ="flex"
+  galleryOne.style.display ="none"
+  
 }
 
-
-
-function galleryShow(n) {
-
-  var i;
-  
-  var slide = document.getElementsByClassName("slides");
-  var dots = document.getElementsByClassName("dot");
-  
-  if (n > slide.length) {galleryIndex = 1}
-
-  if (n < 1){galleryIndex = slide.length} 
-  
-  for (i = 0; i < slide.length; i++) {
-      slide[i].style.display ="none";
-  } 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" activeSlide", "");
-  }
-  slide[galleryIndex-1].style.display = "flex";
-  dots[galleryIndex-1].className += " activeSlide";
-}
-
+nextButton.onclick = nextChange;
