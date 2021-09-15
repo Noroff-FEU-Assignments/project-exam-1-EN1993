@@ -159,29 +159,6 @@ li a {
 
 /*blog*/
 
-.blog--posts {
-  width: 30%;
-  margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 2px solid green;
-}
-
-.blog--posts-image {
-  width: 300px;
-  height: 300px;
-  
-}
-
-.blog-posts {
-  width: 50%;
-  margin: 0 auto;
-  height: 300px;
-  background: cornflowerblue;
-  margin-top: 100px;
-}
-
 .specific {
   width: 50%;
   margin: 0 auto;
