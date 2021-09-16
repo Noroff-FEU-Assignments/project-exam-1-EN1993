@@ -1,0 +1,32 @@
+
+
+.specific {
+  width: 50%;
+  margin: 0 auto;
+  height: 300px;
+  border: 2px solid green;
+  margin-top: 100px;
+}
+
+.blog--specific-image {
+  width: 300px;
+  height: 300px;
+}
+
+.featuredmedia-specific-text{
+  position: relative;
+  top: 7px;
+}
+
+h4{
+  background: #3c463e;
+  position: relative;
+  bottom: 86px;
+  padding: 4px;
+  width: 210px;
+  text-align: center;
+  margin-left: 40px;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+}

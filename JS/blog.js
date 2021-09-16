@@ -6,12 +6,13 @@ async function getBlog(url) {
   const blog = await response.json();
   blog.forEach(function(blogs){
     blogContainer.innerHTML += `
-    
-      <div class='blog'>
-        <div class='blog--posts-image'style="background-image:url('${blogs._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
-        <span class='featuredmedia-text'><h4>${blogs._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span>
-        
-      </div>
+      <a href="blogSpecific.html?id=${blogs.id}">
+        <div class='blog'>
+          <div class='blog--posts-image'style="background-image:url('${blogs._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
+          <span class='featuredmedia-text'><h4>${blogs._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span>
+          
+        </div>
+      </a>  
     `
   });
 }
