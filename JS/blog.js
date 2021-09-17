@@ -1,4 +1,4 @@
-const baseUrl ='https://pe.enlive.one/wp-json/wp/v2/posts?_embed';
+const baseUrl ='https://pe.enlive.one/wp-json/wp/v2/posts?_embed' ;
 const blogContainer = document.querySelector(".blog");
 
 async function getBlog(url) {

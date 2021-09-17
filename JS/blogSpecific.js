@@ -4,7 +4,7 @@ const parms = new URLSearchParams(querystring);
 const id = parms.get("id");
 
 
-const url = "https://pe.enlive.one/wp-json/wp/v2/posts?_embed/30";
+const url = "https://pe.enlive.one/wp-json/wp/v2/posts?_embed/" +id;
 
 const blogSpecificContainer = document.querySelector(".blog-specific");
 
