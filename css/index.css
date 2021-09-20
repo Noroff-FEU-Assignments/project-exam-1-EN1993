@@ -57,6 +57,7 @@ h2 {
   max-width: 1300px;
   position: relative;
   margin: auto;
+  display: flex;
 }
 .gallery {
   display: flex;
@@ -92,7 +93,7 @@ h2 {
 .next:hover {
   background: #d98236;
 }
-figcaption {
+figcaption{
   color: white;
   background: #3c463e;
   text-align: center;
@@ -108,6 +109,8 @@ figcaption {
 
 
 .gallery-picture{
+  height: 300px;
+  width: 300px;
   margin: 10px;
 }
 
