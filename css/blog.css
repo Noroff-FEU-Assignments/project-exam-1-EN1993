@@ -2,6 +2,10 @@ h1,
 h3 {
   text-align: center;
 }
+
+h1,h2{
+  color: #3c463e;
+}
 h3{
   font-size: 26px;
 }
@@ -85,6 +89,4 @@ h3{
   top: 7px;
 }
 
-footer {
-  margin-top: 16.1rem;
-}
+

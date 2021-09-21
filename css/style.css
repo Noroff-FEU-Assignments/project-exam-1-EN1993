@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
-  font-family:'Sulphur Point', sans-serif, Verdana, Tahoma, sans-serif;
+
+  font-family: "Sulphur Point", sans-serif, Verdana, Tahoma, sans-serif;
 }
 /* Header section */
 header {
@@ -123,7 +124,7 @@ li a {
 
 .subscribe-email::placeholder {
   color: #d98236;
-  font-size: 15px;
+
   font-weight: bold;
 }
 
@@ -131,6 +132,9 @@ li a {
   color: #d98236;
   border: none;
   font-weight: bold;
+  left: 1px;
+  position: relative;
+  width: 298px;
 }
 
 .Subscribe-btn:hover {
@@ -156,7 +160,3 @@ li a {
   margin-top: 65px;
   text-align: center;
 }
-
-
-
-
