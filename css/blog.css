@@ -2,6 +2,9 @@ h1,
 h3 {
   text-align: center;
 }
+h3{
+  font-size: 26px;
+}
 .blog-post-container00 {
   margin-top: 9rem;
 }
@@ -58,7 +61,12 @@ h3 {
   flex-direction: column;
   gap: 10px;
 }
-
+.blog {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .blog-post-specific h4 {
   background: #3c463e;
   position: relative;
@@ -70,6 +78,7 @@ h3 {
   opacity: 0.8;
   color: white;
   font-weight: bold;
+  font-size: 21px;
 }
 .featuredmedia-text {
   position: relative;

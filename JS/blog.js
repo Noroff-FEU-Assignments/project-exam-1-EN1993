@@ -4,19 +4,26 @@ const blogContainer = document.querySelector(".blog");
 async function getBlog(url) {
   const response = await fetch(url);
   const blog = await response.json();
-  blog.forEach(function(blogs){
+
+  for (let i = 0; i < blog.length; i++) {
+
+    if (i===3) {
+      break;
+    }
+    
     blogContainer.innerHTML += `
-      <a href="blogSpecific.html?id=${blogs.id}">
-        <div class='blog'>
-          <div class='blog--posts-image'style="background-image:url('${blogs._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
-          <span class='featuredmedia-text'><h4>${blogs._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span>
-          
-        </div>
-      </a>  
-    `
-  });
+    <a href="specific.html?id=${blog[i].id}">
+      <div >
+        <div class='blog--posts-image'style="background-image:url('${blog[i]._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
+        <span class='featuredmedia-text'><h4>${blog[i]._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span>
+        
+      </div>
+    </a>  `
+  }
+  
 }
 getBlog(baseUrl);
+
 
 
 const viewMoreTitle = document.querySelector(".blog-post-specific-title");

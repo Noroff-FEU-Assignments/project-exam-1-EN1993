@@ -42,6 +42,8 @@ function prevChange() {
   
   galleryOne.style.display ="flex"
   galleryTwo.style.display ="none"
+ 
+ 
 }
 
 prevButton.onclick = prevChange;
@@ -51,6 +53,8 @@ function nextChange() {
   
   galleryTwo.style.display ="flex"
   galleryOne.style.display ="none"
+ 
+ 
   
 }
 

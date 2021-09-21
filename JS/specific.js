@@ -11,18 +11,23 @@ const blogSpecificContainer = document.querySelector(".blog-specific");
 async function blogSpecific() {
   const response = await fetch(url);
   const specific = await response.json();
-  
-  blogSpecificContainer.innerHTML += `
+
+  for (let i = 0; i < specific.length; i++) {
+    
+    blogSpecificContainer.innerHTML += `
   
     <div>
         
-      <div class='blog--specific-image'style="background-image:url('${specific._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
-      <span class='featuredmedia-specific-text'><h4>${specific._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span> 
+      <div class='blog--specific-image'style="background-image:url('${specific[i]._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
+      <span class='featuredmedia-specific-text'><h4>${specific[i]._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span> 
         
     </div>
   
   
   
   `
+  }
+  
+ 
 }
 blogSpecific();
