@@ -3,10 +3,15 @@ h3 {
   text-align: center;
 }
 
-h1,h2{
+h2 {
+  font-size: 18px;
+}
+
+h1,
+h2 {
   color: #3c463e;
 }
-h3{
+h3 {
   font-size: 26px;
 }
 .blog-post-container00 {
@@ -25,7 +30,6 @@ h3{
   width: 300px;
   padding: 5px;
 }
-
 
 .blog--posts-image {
   width: 300px;
@@ -89,5 +93,3 @@ h3{
   position: relative;
   top: 7px;
 }
-
-
