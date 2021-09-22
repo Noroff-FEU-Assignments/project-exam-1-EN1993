@@ -38,3 +38,5 @@ function viewMoreSection() {
 }
 
 viewMoreButton.onclick = viewMoreSection;
+
+
