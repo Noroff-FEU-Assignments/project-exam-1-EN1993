@@ -1,5 +1,9 @@
+import createMenu from "./menu/createMenu.js";
+
 const baseUrl ='https://pe.enlive.one/wp-json/wp/v2/posts?_embed' ;
 const blogContainer = document.querySelector(".blog");
+
+createMenu();
 
 async function getBlog(url) {
   const response = await fetch(url);

@@ -1,3 +1,4 @@
+import createMenu from "./menu/createMenu.js";
 
 const form = document.querySelector("#contactForm")
 
@@ -16,7 +17,7 @@ const subjectError = document.querySelector(".subjectError");
 const message = document.querySelector("#textarea");
 const messageError = document.querySelector(".messageError");
 
-
+createMenu();
 function validateForm(event) {
   event.preventDefault();
 

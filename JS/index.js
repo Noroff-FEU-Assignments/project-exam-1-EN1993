@@ -2,6 +2,8 @@
 // const baseUrl ='https://pe.enlive.one/wp-json/wp/v2/posts?_embed';
 // const latestPostContainer = document.querySelector(".galleryshow");
 
+import createMenu from "./menu/createMenu.js";
+
 // async function latestPost(url) {
 //   const response = await fetch(url);
 //   const posts = await response.json();
@@ -37,6 +39,8 @@ const galleryThree = document.querySelector(".three");
 const prevButton = document.querySelector(".prev");
 
 const nextButton = document.querySelector(".next");
+
+createMenu();
 
 function prevChange() {
   

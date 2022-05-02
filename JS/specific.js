@@ -1,3 +1,4 @@
+import createMenu from "./menu/createMenu.js";
 
 const querystring = document.location.search;
 const parms = new URLSearchParams(querystring);
@@ -7,7 +8,7 @@ const id = parms.get("id");
 const url = "https://pe.enlive.one/wp-json/wp/v2/posts" +id;
 
 const blogSpecificContainer = document.querySelector(".blog-specific");
-
+createMenu();
 async function blogSpecific() {
   const response = await fetch(url);
   const specific = await response.json();
