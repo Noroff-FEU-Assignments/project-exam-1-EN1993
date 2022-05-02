@@ -7,7 +7,7 @@ body {
 header {
   background: #3c463e;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -19,7 +19,7 @@ nav {
   display: none;
   position: fixed;
   background: #3c463e;
-  top: 53px;
+  top: 70px;
   right: 0px;
   width: 100%;
   height: 100%;
@@ -40,7 +40,9 @@ li a {
 }
 
 .logo img {
-  height: 50px;
+  height: 61px;
+  position: relative;
+  left: 50%;
 }
 
 /* burger menu */
@@ -60,9 +62,9 @@ li a {
 .menu-btn-burger{
   width: 45px;
   height: 6px;
-  background: var(--third-color);
+  background:white;
   border-radius: 7px;
-  box-shadow: 0 2px 5px var(--secondary-color);
+  box-shadow: 0 2px 5px #d98236;
   transition: all .5s ease-in-out;
 }
 .menu-btn-burger::before,
@@ -71,9 +73,9 @@ content: '';
 position: absolute;
 width: 45px;
 height: 6px;
-background: var(--third-color);
+background: white;
 border-radius: 7px;
-box-shadow: 0 2px 5px var(--secondary-color);
+box-shadow: 0 2px 5px #d98236;
 transition: all .5s ease-in-out;
 }
 

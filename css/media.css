@@ -4,9 +4,9 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 820px) {
   .logo img {
-    padding-left: 80px;
+    /* padding-left: 80px; */
   }
   .active {
     background: #d98236;
