@@ -39,6 +39,11 @@ li a {
   justify-content: center;
 }
 
+.active {
+  color: #d98236;
+  font-size: 30px;
+}
+
 .logo img {
   height: 61px;
   position: relative;
