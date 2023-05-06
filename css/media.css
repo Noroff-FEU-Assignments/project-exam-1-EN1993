@@ -1,4 +1,4 @@
-@media only screen and (min-width: 638px) {
+@media only screen and (min-width: 654px) {
   .gallery-container {
     margin-top: 18rem;
   }
@@ -13,7 +13,6 @@
     color: white;
     padding: 4px 13px;
     font-size: 20px;
-    
   }
 
   li a:hover {
